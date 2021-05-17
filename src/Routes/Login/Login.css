@@ -1,0 +1,212 @@
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: rgba(0, 247, 255, 0.4);
+}
+.login-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.login-img {
+    position: relative;
+    z-index: 2;
+    background-image: url(https://hongo.themezaa.com/watch/wp-content/uploads/sites/10/revslider/watch_banner_slider/watch-0011.png.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 50%;
+    min-height: 50%;
+    overflow: visible;
+}
+.login-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-card {
+    background-color: var(--bg-color);
+    width: 90%;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    padding-left: 2.6rem;
+    border-radius: 0.2rem;
+    padding-bottom: 0;
+    box-shadow: -18px -18px 2px rgba(223, 223, 223, 0.5),
+        18px 18px 2px transparent;
+}
+.custom-bg.form-field.custom-bg .input-field {
+    color: var(--black-color);
+}
+/* .custom-bg.form-field.custom-bg .input-field:focus ~ .form-label {
+    color: var(--black-color-100);
+} */
+.form-field .input-field ~ hr {
+    box-shadow: 6px 6px 12px #dbd8d4, -6px -6px 12px #ffffff;
+}
+/* .custom-bg.form-field .input-field:focus ~ hr {
+    background-color: var(--black-color);
+} */
+
+.login-upper-part {
+    flex: 0.6;
+    text-align: center;
+}
+.login-card a {
+    font-size: 0.9rem;
+}
+.login-card .logo-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.login-card .logo-text {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    width: min-content;
+    position: relative;
+    left: 2rem;
+    font-style: normal;
+}
+.login-card .logo-text b {
+    color: grey;
+    margin-right: 0.2rem;
+}
+.login-lower-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 93%;
+    margin-right: 0.7rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1.8rem;
+}
+.btn-block-custom {
+    /* margin: 1.5rem 0rem; */
+    /* margin-top: 2.5rem; */
+    background-color: var(--white-color);
+    color: var(--black-color);
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: inset 6px 6px 8px #f3f3f3, inset -6px -6px 8px #d1d1d1;
+}
+
+.login-text {
+    text-align: left;
+    position: relative;
+    z-index: 0;
+    max-width: 450px;
+    padding: 0rem;
+    margin-left: 2.5rem;
+    padding-right: 0;
+    background: transparent;
+}
+
+.login-text h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white-color-100);
+    background: transparent;
+}
+
+.login-text h3 > b {
+    font-size: 3rem;
+    font-weight: 600;
+    background: transparent;
+    color: var(--white-color-50);
+}
+.login-text h3 > b:last-child {
+    color: var(--white-color);
+    background: transparent;
+}
+
+.login-text p {
+    /* background: red; */
+    padding: 0.2rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--white-color);
+    background: transparent;
+}
+
+.btn-block-custom:hover {
+    box-shadow: none;
+}
+.login-card h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.login-card .form-field {
+    margin-block: 2.8rem;
+    transform: scale(0.95);
+}
+.login-card .form-help {
+    /* position: relative; */
+    bottom: -1.85rem;
+    width: 100%;
+    text-align: left;
+}
+
+.badge {
+    color: var(--cart-dropdown-color);
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1490px) {
+    /* .login-left{
+       background: rgb(117, 95, 70);
+    } */
+    .login-img {
+        position: absolute;
+        background-position: right;
+        height: 100%;
+        left: -100px;
+    }
+    .login-text {
+        position: relative;
+        right: -100px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .login-left {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .login-card {
+        box-shadow: -10px -10px 2px rgba(223, 223, 223, 0.5),
+            10px 10px 2px transparent;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .login-card {
+        padding: 0.8rem 0.5rem;
+        padding-left: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .login-img {
+        display: none;
+    }
+    .login-text {
+        position: relative;
+        right: 0px;
+    }
+}

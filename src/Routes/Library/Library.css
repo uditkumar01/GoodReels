@@ -1,0 +1,10 @@
+.heading-top {
+    color: var(--color-muted-100);
+    padding-top: 1rem;
+    padding-left: 1.45rem;
+    padding-bottom: 0.3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(207, 205, 205);
+    margin: 0 1rem;
+}

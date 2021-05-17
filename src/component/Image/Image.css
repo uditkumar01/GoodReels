@@ -1,0 +1,13 @@
+.img {
+    background: url(https://d2m5g5c8r27ogi.cloudfront.net/neutral/c/8e/c08e2f2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    box-shadow: inset 5px 5px 10px rgba(248, 248, 248, 0.35),
+        inset -5px -5px 10px rgba(27, 27, 27, 0.35);
+}
+.round {
+    border-radius: 50%;
+}
