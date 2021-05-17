@@ -1,0 +1,36 @@
+.btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 3px;
+    background: rgb(0, 150, 219);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.2s all;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.btn:hover, .btn:active {
+    background: rgb(0, 140, 204);
+}
+.btn.btn-sm {
+    display: none;
+}
+.btn.btn-lg {
+    display: flex;
+}
+
+@media only screen and (max-width: 1260px) {
+    .btn {
+        padding: 0.4rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .btn.btn-lg {
+        display: none;
+    }
+    .btn.btn-sm {
+        display: flex;
+    }
+}

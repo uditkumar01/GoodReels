@@ -1,0 +1,129 @@
+.watch-video-container {
+    background: var(--bg-color);
+    /* height: 100vh; */
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.video-container {
+    width: 100%;
+    height: calc(100vh - 18px);
+    padding: 3rem;
+    padding-bottom: 0;
+    /* max-width: 1200px; */
+    overflow: auto;
+    display: grid;
+    grid-template-columns: auto 460px;
+    /* height: auto; */
+}
+.video {
+    width: 100%;
+    height: auto;
+    position: static;
+}
+.video-one {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    min-width: 100%;
+    height: 700px;
+
+    /* padding: 1rem 6rem; */
+}
+.suggestion-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-height: calc(900px - 0px);
+    display: grid;
+    overflow-y: auto;
+    overflow-x: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.video {
+    margin: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 10rem;
+    flex: 1;
+}
+
+.nav-void {
+    margin: 0.8rem 0;
+}
+
+@media only screen and (max-width: 1700px) {
+    .video-one {
+        height: 600px;
+    }
+}
+
+@media only screen and (max-width: 1566px) {
+    .video-one {
+        height: 500px;
+    }
+    .video {
+        padding: 1rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 1430px) {
+    .video {
+        padding: 1rem 1rem;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .video-one {
+        height: 400px;
+    }
+
+    .video {
+        height: 700px;
+    }
+    .video-container {
+        grid-template-columns: auto 340px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .video-container {
+        grid-template-columns: auto;
+    }
+    .video-one {
+        margin-top: 2rem;
+    }
+    .suggestion-list {
+        max-height: unset;
+        margin-top: 0px;
+        height: max-content;
+    }
+    .video {
+        padding: 1rem 1rem;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .video-container {
+        padding: 2rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .video-one {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .video-container {
+        padding: 1.5rem 0rem;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .video-container {
+        padding: 1rem 0rem;
+    }
+    .video-one {
+        height: 200px;
+    }
+}

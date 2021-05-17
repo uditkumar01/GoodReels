@@ -1,0 +1,343 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap);
+
+:root {
+    --alert-light-blue: rgb(196, 224, 233);
+    --alert-muted-blue: #69b4d0;
+    --alert-normal-blue: #1c9cca;
+    --alert-dark-blue: #156985;
+    --alert-light-green: #c5eedb;
+    --alert-muted-green: #66c79a;
+    --alert-normal-green: #1ca364;
+    --alert-dark-green: #149157;
+    --alert-light-yellow: #f0e6c1;
+    --alert-muted-yellow: #bdb574;
+    --alert-normal-yellow: #a8960e;
+    --alert-dark-yellow: #a28118;
+    --alert-light-red: #eecdc5;
+    --alert-muted-red: #dba096;
+    --alert-normal-red: rgb(196, 69, 47);
+    --alert-dark-red: rgb(206, 15, 15);
+    --light-bg: #e6e6e6;
+    --primary-color: #4ab2e2;
+    --primary-dark-color: #0784f9;
+    --secondary-color: #8b8b8b;
+    --secondary-dark-color: #656f79;
+    --light-grey: #c3cbd3;
+    --dark-grey: rgb(59, 57, 57);
+    --light-color: #d6e3f1;
+    --dark-color: #131419;
+    --blue-color: #1c9cca;
+    --blue-dark-color: #1f7c9e;
+    --green-color: #26b874;
+    --green-dark-color: #209b61;
+    --yellow-color: #bd8816;
+    --yellow-dark-color: #946a10;
+    --red-color: rgb(197, 43, 16);
+    --red-dark-color: rgb(153, 34, 13);
+    --dark-bg: rgb(38, 41, 43);
+    --dark-color: rgb(53, 55, 58);
+    --primary-bright: #00a6cf;
+}
+
+::-moz-selection {
+    color: var(--blue-color);
+    background: var(--light-color);
+}
+
+.danger-bg {
+    color: var(--red-color);
+}
+
+.info-bg {
+    color: var(--blue-color);
+}
+
+.warning-bg {
+    color: var(--yellow-color);
+}
+
+::selection {
+    color: var(--blue-color);
+    background: var(--light-color);
+}
+
+.danger-bg {
+	color: var(--red-dark-color);
+}
+
+.form-field {
+    text-align: center;
+    margin: 0.5rem 0.5rem;
+	margin-bottom: 1rem;
+    width: max-content;
+    position: relative;
+    max-width: 95%;
+    overflow-wrap: break-word;
+}
+
+.form-field .form-label {
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    font-size: 1rem;
+    left: 0.25rem;
+    color: var(--secondary-color);
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+.form-field .input-field {
+    border: none;
+    background: inherit;
+    position: relative;
+    padding: 0.2rem;
+    background: 0 0;
+    z-index: 1;
+    padding-bottom: 0.6rem;
+}
+
+.form-field hr {
+    background: var(--secondary-color);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+}
+
+.form-field hr:last-child {
+    transition: all 0.3s ease;
+    width: 0;
+    left: 0;
+}
+
+.form-field .input-field:focus ~ hr {
+    width: 100%;
+}
+
+.form-field .input-field:focus ~ .form-label,
+.form-field .input-field:valid ~ .form-label {
+    font-size: 0.8rem;
+    top: -1rem;
+    left: 0.18rem;
+}
+
+.form-field .input-field:focus ~ .form-label {
+    color: var(--primary-dark-color);
+}
+
+.form-field hr:last-child {
+    background: var(--primary-dark-color);
+}
+
+.form-field .icon {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+.form-field.primary-bg .input-field:focus ~ .form-label {
+    color: var(--primary-dark-color);
+}
+
+.form-field.primary-bg hr:last-child {
+    background: var(--primary-dark-color);
+}
+
+.form-field.success-bg .input-field:focus ~ .form-label {
+    color: var(--green-dark-color);
+}
+
+.form-field.success-bg hr:last-child {
+    background: var(--green-dark-color);
+}
+
+.form-field.secondary-bg .input-field:focus ~ .form-label {
+    color: var(--secondary-dark-color);
+}
+
+.form-field.secondary-bg hr:last-child {
+    background: var(--secondary-dark-color);
+}
+
+.form-field.info-bg .input-field:focus ~ .form-label {
+    color: var(--blue-dark-color);
+}
+
+.form-field.info-bg hr:last-child {
+    background: var(--blue-dark-color);
+}
+
+.form-field.warning-bg .input-field:focus ~ .form-label {
+    color: var(--yellow-color);
+}
+
+.form-field.warning-bg hr:last-child {
+    background: var(--yellow-color);
+}
+
+.form-field.danger-bg .input-field:focus ~ .form-label {
+    color: var(--red-color);
+}
+
+.form-field.danger-bg hr:last-child {
+    background: var(--red-color);
+}
+
+.form-field .form-help {
+    position: absolute;
+    font-size: 0.8rem;
+    background: 0 0;
+    padding: 0.3rem;
+}
+
+.form-field .checkbox-label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 1.4rem;
+    text-align: left;
+    color: #333;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.form-field .checkbox-label .input-checkbox {
+    width: auto;
+    opacity: 0;
+    position: absolute;
+    top: 3px;
+    cursor: pointer;
+    z-index: 0;
+    left: 0;
+}
+
+.form-field .checkbox-label small {
+    padding-left: 0.4rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-field .checkbox-label .input-checkbox:checked ~ .tick-icon,
+.form-field .checkbox-label .input-checkbox ~ .tick-icon {
+    border-width: 0;
+    padding: 0.05rem 0.08rem;
+    font-size: 0.7rem;
+    position: absolute;
+    left: 0.25rem;
+    color: transparent;
+    user-select: none;
+    background: 0 0;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    height: 1.2rem;
+    width: 0.5rem;
+    transform: rotate3d(0.8, 0.5, 1, 45deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.form-field .checkbox-label .input-checkbox ~ .tick-icon {
+    border: 2px solid;
+    transform: rotate3d(1, 1, 1, 0deg);
+    height: 1rem;
+    width: 1rem;
+    top: 0.2rem;
+    left: 0;
+    border-radius: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+.form-field.primary-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--primary-bright);
+}
+
+.form-field.secondary-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--secondary-dark-color);
+}
+
+.form-field.success-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--green-dark-color);
+}
+
+.form-field.info-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--blue-dark-color);
+}
+
+.form-field.light-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--dark-grey);
+}
+
+.form-field.dark-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--light-color);
+}
+
+.form-field.warning-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--yellow-color);
+}
+
+.form-field.danger-bg .checkbox-label .input-checkbox ~ .tick-icon {
+    border-color: var(--red-color);
+}
+
+.form-field .radio-label .radio-outer-circle {
+    background: inherit;
+    position: absolute;
+    left: -0.05rem;
+    top: 0.1rem;
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+}
+
+.form-field .radio-label .input-radio {
+    opacity: 0;
+    margin-left: 0.3rem;
+}
+
+.form-field small {
+    color: var(--dark-grey);
+}
+
+.form-field
+    .radio-label
+    .input-radio:checked
+    ~ .radio-outer-circle
+    .radio-inner-circle {
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    border: 4px solid;
+}
+
+.form-field.type-i
+    .radio-label
+    .input-radio:checked
+    ~ .radio-outer-circle
+    .radio-inner-circle {
+    border: 2px solid;
+    outline: 2px solid;
+}
+
+.form-field.type-ii
+    .radio-label
+    .input-radio:checked
+    ~ .radio-outer-circle
+    .radio-inner-circle {
+    border: 3px solid;
+}
+
+.form-field.type-iii
+    .radio-label
+    .input-radio:checked
+    ~ .radio-outer-circle
+    .radio-inner-circle {
+    border: 5px solid;
+}
+
+.fix-floating-btn {
+    position: static;
+}

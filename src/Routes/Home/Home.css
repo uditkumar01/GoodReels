@@ -1,0 +1,10 @@
+.home-container {
+    background-color: var(--bg-color);
+    flex: 1;
+}
+.home-content {
+    /* background: red; */
+    max-height: calc(100vh - 77px);
+    overflow-y: auto;
+    overflow-x:  hidden;
+}

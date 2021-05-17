@@ -1,0 +1,49 @@
+.card-collection {
+    display: flex;
+    width: calc(100vw - 320px);
+    overflow-x: auto;
+    overflow-y: visible !important;
+    position: relative;
+}
+
+.card-collection.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding: 1rem;
+}
+
+.App.side-close .card-collection {
+    width: calc(100vw - 62px);
+}
+
+.card-container {
+    padding-top: 2rem;
+}
+.card-container-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    color: var(--dark-grey-color);
+}
+
+.blur-left {
+    position: sticky;
+    min-height: 100%;
+    min-width: 30px;
+    z-index: 1;
+    left: 0;
+    background: linear-gradient(to right, var(--bg-color) 30%, transparent);
+}
+
+@media only screen and (max-width: 470px) {
+    .card-collection.container-grid {
+        padding: 0;
+    }
+    .blur-left {
+        min-width: 13px;
+    }
+    .card-collection.container-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

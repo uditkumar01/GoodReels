@@ -1,0 +1,61 @@
+.stacked-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.stacked-list .list-head {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    padding-top: 2.5rem;
+    color: var(--white-color-50);
+}
+
+.stacked-list .list-item {
+    background: transparent;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    margin: 0 !important;
+}
+
+.stacked-list .list-item:hover,
+.stacked-list .list-item:active,
+.stacked-list .list-item.active {
+    background: rgba(7, 80, 74, 0.2);
+    border-left: 4px solid var(--white-color);
+}
+
+.stacked-list .list-item {
+    border-bottom: 0px solid var(--border-color);
+    margin-bottom: 0.1rem;
+    display: flex;
+    align-items: center;
+    color: var(--white-color);
+}
+.stacked-list .list-item i{
+    display: flex;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.stacked-list .list-item:last-child {
+    /* border-bottom-width: 0px; */
+    margin-bottom: 2.2rem;
+}
+
+.sidebar-container.close .stacked-list .list-head {
+    display: none;
+}
+
+.sidebar-container.close .stacked-list .list-item p{
+    display: none;
+}
+.sidebar-container.close .stacked-list .list-item i {
+    margin: 0;
+}
+.sidebar-container.close .stacked-list .list-item {
+    padding: 1.2rem 0;
+
+    justify-content: center;
+}

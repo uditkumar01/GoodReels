@@ -1,0 +1,37 @@
+.dropdown {
+    position: relative;
+}
+.dropdown-list {
+    list-style: none;
+    background: var(--white-color);
+    position: absolute;
+    width: 210px;
+    max-height: 400px;
+    overflow: hidden;
+    left: -180px;
+    bottom: 0;
+    padding: 0.2rem 0;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.dropdown-list.filter-dropdown {
+    left: unset;
+    right: 0;
+    bottom: 1px;
+}
+.dropdown-list.close {
+    max-height: 0;
+    padding: 0;
+}
+.dropdown-list-item {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s all ease;
+}
+.dropdown-list-item:hover,
+.dropdown-list-item:active,
+.dropdown-list-item.active {
+    background: var(--white-color-150);
+}
